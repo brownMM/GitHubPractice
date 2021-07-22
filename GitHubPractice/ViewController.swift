@@ -19,6 +19,17 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    //Rachel - Add
+    
+    
+    //Frank - Multiply
+    
+    
+    //Chris - Divide
+    
+    
+    //Kristin - Subtract
+    
 
 }
 
