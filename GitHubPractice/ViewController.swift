@@ -26,7 +26,7 @@ class ViewController: UIViewController {
         
         operationLabel.text = "+"
         
-        var result = number1 + number2
+        let result = number1 + number2
         
         answerLabel.text = "\(result)"
         
