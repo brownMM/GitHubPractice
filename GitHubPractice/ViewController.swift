@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var secondNumberTextField: UITextField!
     @IBOutlet weak var operationLabel: UILabel!
     @IBOutlet weak var answerLabel: UILabel!
-    
+    //Rachel changed this
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
