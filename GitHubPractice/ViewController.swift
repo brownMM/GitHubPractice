@@ -31,6 +31,8 @@ class ViewController: UIViewController {
     //Kristin - Subtract
     @IBAction func subtractButton(_ sender: UIButton)
     {
+        
+        operationLabel.text = "-"
         guard let numberOne = Int(firstNumberTextField.text!)
         
         else {
