@@ -67,6 +67,9 @@
                                 <state key="normal" image="plus" catalog="system">
                                     <color key="titleColor" name="AccentColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="whenAddButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J13-A1-Vbl"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="scu-cZ-ulI">
                                 <rect key="frame" x="114" y="391" width="73" height="53"/>
@@ -76,6 +79,9 @@
                                 <state key="normal" image="minus" catalog="system">
                                     <color key="titleColor" name="AccentColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="subtractButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ql2-R8-8js"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gnq-2D-g0R">
                                 <rect key="frame" x="213" y="391" width="73" height="53"/>
@@ -94,11 +100,20 @@
                                 <state key="normal" image="divide" catalog="system">
                                     <color key="titleColor" name="AccentColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="divideWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8Ru-BN-j5u"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
+                    <connections>
+                        <outlet property="answerLabel" destination="zqS-c4-OcX" id="Udr-uF-WrH"/>
+                        <outlet property="firstNumberTextField" destination="nOP-ja-pCB" id="mf2-KD-Aj6"/>
+                        <outlet property="operationLabel" destination="dEA-3d-biA" id="HcR-0w-hFB"/>
+                        <outlet property="secondNumberTextField" destination="0a7-pj-c9U" id="2uY-mi-TFN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
