@@ -26,6 +26,17 @@ class ViewController: UIViewController {
     
     
     //Chris - Divide
+    @IBAction func divide(sender: UIButton)
+    {
+        let num1 = Double(firstNumberTextField.text!) ?? 0.0
+        let num2 = Double(secondNumberTextField.text!) ?? 0.0
+        
+        let result = num1 / num2
+        
+        operationLabel.text = "/"
+        
+        answerLabel.text = String(result)
+    }
     
     
     //Kristin - Subtract
