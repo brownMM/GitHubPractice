@@ -29,7 +29,26 @@ class ViewController: UIViewController {
     
     
     //Kristin - Subtract
-    
+    @IBAction func subtractButton(_ sender: UIButton)
+    {
+        guard let numberOne = Int(firstNumberTextField.text!)
+        
+        else {
+            answerLabel.text = "ERROR"
+            return
+        }
+        
+        guard let numberTwo = Int(secondNumberTextField.text!)
+        
+        else {
+            answerLabel.text = "ERROR"
+            return
+        }
+        
+        let answer = numberOne - numberTwo
+        
+        answerLabel.text = "\(answer)"
+    }
 
 }
 
