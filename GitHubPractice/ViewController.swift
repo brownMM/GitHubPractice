@@ -20,7 +20,17 @@ class ViewController: UIViewController {
     }
 
     //Rachel - Add
-    
+    @IBAction func whenAddButtonTapped(_ sender: UIButton){
+        let number1 = Int(firstNumberTextField.text!)!
+        let number2 = Int(secondNumberTextField.text!)!
+        
+        operationLabel.text = "+"
+        
+        var result = number1 + number2
+        
+        answerLabel.text = "\(result)"
+        
+    }
     
     //Frank - Multiply
     
