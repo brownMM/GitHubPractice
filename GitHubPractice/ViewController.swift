@@ -33,7 +33,17 @@ class ViewController: UIViewController {
     }
     
     //Frank - Multiply
-    
+    @IBAction func whenMultiplyButtonTapped(_ sender: UIButton){
+        let numberA = Int(firstNumberTextField.text!)!
+        let numberB = Int(secondNumberTextField.text!)!
+        
+        operationLabel.text = "*"
+        
+        let result = numberA * numberB
+        
+        answerLabel.text = "\(result)"
+        
+    }
     
     
     //Chris - Divide
