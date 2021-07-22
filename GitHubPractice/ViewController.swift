@@ -20,12 +20,34 @@ class ViewController: UIViewController {
     }
 
     //Rachel - Add
-    
+    @IBAction func whenAddButtonTapped(_ sender: UIButton){
+        let number1 = Int(firstNumberTextField.text!)!
+        let number2 = Int(secondNumberTextField.text!)!
+        
+        operationLabel.text = "+"
+        
+        var result = number1 + number2
+        
+        answerLabel.text = "\(result)"
+        
+    }
     
     //Frank - Multiply
     
     
+    
     //Chris - Divide
+    @IBAction func divide(sender: UIButton)
+    {
+        let num1 = Double(firstNumberTextField.text!) ?? 0.0
+        let num2 = Double(secondNumberTextField.text!) ?? 0.0
+        
+        let result = num1 / num2
+        
+        operationLabel.text = "/"
+        
+        answerLabel.text = String(result)
+    }
     
     
     //Kristin - Subtract
